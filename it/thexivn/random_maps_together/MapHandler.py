@@ -19,8 +19,8 @@ logger = logging.getLogger(__name__)
 class MapHandler:
     def __init__(self, map_manager: MapManager, storage: Storage, configs: Configurations):
         self._tmnx_rest_client = TMNXRestClient()
-        self._hub_map = '5vcBbokJjv6tracgfC3dV03THX0'
-        self._hub_id = '161008'
+        self._hub_map = 'WxBQHr_QBdyloboTJRyb0A7A4Ti'
+        self._hub_id = '162073'
         self._map_manager = map_manager
         self._storage = storage
         self._configs: Configurations = configs
