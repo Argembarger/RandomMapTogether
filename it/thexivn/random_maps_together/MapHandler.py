@@ -52,7 +52,11 @@ class MapHandler:
             logger.warning('Preload failed')
 
     async def load_hub(self):
-        logger.info('loading HUB map ...')
+        # Nasty workaround...
+        self._hub_map = 'WxBQHr_QBdyloboTJRyb0A7A4Ti'
+        self._hub_id = '162073'
+        logger.info('loading HUB map ... ')
+        logger.info(self._hub_id)
         if await self._map_exists(self._hub_map):
             logger.info('HUB map was already loaded')
             await self._map_manager.set_current_map(self._hub_map)

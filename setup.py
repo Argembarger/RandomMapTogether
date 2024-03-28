@@ -23,7 +23,7 @@ setup(
     },
     author='thexivn',
     author_email='thexivn@proton.me',
-    url='https://github.com/thexivn/RandomMapTogether',
+    url='https://github.com/Argembarger/RandomMapTogether',
 
     classifiers=[  # Please update this. Possibilities: https://pypi.python.org/pypi?%3Aaction=list_classifiers
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
