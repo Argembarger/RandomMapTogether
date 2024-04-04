@@ -19,8 +19,8 @@ logger = logging.getLogger(__name__)
 class MapHandler:
     def __init__(self, map_manager: MapManager, storage: Storage, configs: Configurations):
         self._tmnx_rest_client = TMNXRestClient()
-        self._hub_map = 'WxBQHr_QBdyloboTJRyb0A7A4Ti'
-        self._hub_id = '162073'
+        self._hub_map = 'J6xiVxNPd3FKeh3O7GLfRwmk1R4'
+        self._hub_id = '164423'
         self._map_manager = map_manager
         self._storage = storage
         self._configs: Configurations = configs
@@ -52,9 +52,6 @@ class MapHandler:
             logger.warning('Preload failed')
 
     async def load_hub(self):
-        # Nasty workaround...
-        self._hub_map = 'WxBQHr_QBdyloboTJRyb0A7A4Ti'
-        self._hub_id = '162073'
         logger.info('loading HUB map ... 162073')
         logger.info(self._hub_id)
         if await self._map_exists(self._hub_map):
